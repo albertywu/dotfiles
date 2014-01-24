@@ -1,18 +1,18 @@
 # List all files colorized in long format
-alias l="ls -l ${colorflag}"
-
+alias l="clear && ls -l ${colorflag}"
+alias ls="l"
 # List all files colorized in long format, including dot files
-alias la="ls -la ${colorflag}"
+alias la="clear && ls -la ${colorflag}"
 
 # List only directories
-alias lsd='ls -l | grep "^d"'
+alias lsd='clear && ls -l | grep "^d"'
 
 # Easier navigation: .., ..., ~ and -
-alias ..="cd .. && clear && lsd"
-alias cd..="cd .. clear && lsd"
-alias ...="cd ../.. clear && lsd"
-alias ....="cd ../../.. clear && lsd"
-alias .....="cd ../../../.. clear && lsd"
+alias ..="cd .. && lsd"
+alias cd..="cd .. && lsd"
+alias ...="cd ../.. && lsd"
+alias ....="cd ../../.. && lsd"
+alias .....="cd ../../../.. && lsd"
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
