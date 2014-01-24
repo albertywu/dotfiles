@@ -8,23 +8,23 @@ alias la="ls -la ${colorflag}"
 alias lsd='ls -l | grep "^d"'
 
 # Easier navigation: .., ..., ~ and -
-alias ..="cd .. && lsd"
-alias cd..="cd .. && lsd"
-alias ...="cd ../.. && lsd"
-alias ....="cd ../../.. && lsd"
-alias .....="cd ../../../.. && lsd"
+alias ..="cd .. && clear && lsd"
+alias cd..="cd .. clear && lsd"
+alias ...="cd ../.. clear && lsd"
+alias ....="cd ../../.. clear && lsd"
+alias .....="cd ../../../.. clear && lsd"
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-alias dt="cd ~/Desktop && lsd"
-alias dl="cd ~/Downloads && lsd"
-alias dc="cd ~/Documents && lsd"
+alias dt="cd ~/Desktop && clear && lsd"
+alias dl="cd ~/Downloads && clear && lsd"
+alias dc="cd ~/Documents && clear && lsd"
 
 # programs
-alias slt='open -a "Sublime Text 2"'
+alias sub='open -a "Sublime Text 2"'
+alias ghub='open -a "github"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-
 
 # be nice
 alias please=sudo
@@ -35,15 +35,12 @@ alias bunyip='node ~/code/bunyip/cli.js'
 alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
 alias vlc="osascript ~/code/VLCControl/VLCControl.scpt"
 
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
 else # OS X `ls`
 	colorflag="-G"
 fi
-
-
 
 # Always use color output for `ls`
 if [[ "$OSTYPE" =~ ^darwin ]]; then
