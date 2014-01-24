@@ -7,6 +7,10 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+alias dc="cd ~/Documents"
+
 # programs
 alias slt='open -a "Sublime Text 2"'
 # also/or do this:
