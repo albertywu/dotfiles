@@ -20,7 +20,7 @@ alias dl="cd ~/Downloads && lsd"
 alias dc="cd ~/Documents && lsd"
 
 # programs
-alias sub='open -a "Sublime Text 2"'
+alias sub='open -a "Sublime Text"'
 alias hub='open -a "github"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
